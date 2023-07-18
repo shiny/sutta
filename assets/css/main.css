@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.kaiti {
+    font-family: BiauKai, STKaiti, KaiTi, KaiTi_GB2312;
+}
