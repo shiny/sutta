@@ -1,5 +1,7 @@
 <template>
-  <NuxtPage />
+  <NaiveConfig>
+    <NuxtPage />
+  </NaiveConfig>
 </template>
 <script setup>
 useServerHead({
