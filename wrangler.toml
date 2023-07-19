@@ -1,0 +1,12 @@
+name = "hufasi"
+main = "./.output/server/index.mjs"
+workers_dev = true
+compatibility_date = "2022-09-10"
+route = { pattern = "hufasi.com/*", zone_name = "hufasi.com" }
+
+[env.staging]
+name = "hufasi-staging"
+route = { pattern = "staging.hufasi.com/*", zone_name = "hufasi.com" }
+
+[site]
+bucket = ".output/public"
