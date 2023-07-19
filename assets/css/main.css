@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .kaiti {
-    font-family: BiauKai, STKaiti, KaiTi, KaiTi_GB2312;
+    font-family: Arial, BiauKai, STKaiti, KaiTi, KaiTi_GB2312;
+}
+
+.songti {
+    font-family: Georgia, SimSun, "宋体", serif;;
 }
