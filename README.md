@@ -1,63 +1,21 @@
-# Nuxt 3 Minimal Starter
+# 佛典电子化计划
+用现代 Web 技术重排佛典
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[在线演示](https://hufasi.com)
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-```
-
-## Development Server
-
+## Quick Start
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
+pnpm i
+pnpm dev
 ```
 
-## Production
+## Contributors
 
-Build the application for production:
 
-```bash
-# npm
-npm run build
+[![Contributors](https://contrib.rocks/image?repo=shiny/sutta)](https://github.com/shiny/sutta/graphs/contributors)
 
-# pnpm
-pnpm run build
 
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## License
+GPL-3.0 license 
