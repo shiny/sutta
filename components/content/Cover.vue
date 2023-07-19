@@ -5,9 +5,11 @@
 </template>
 <style scoped>
 :deep(h1) {
-    @apply font-semibold text-5xl text-center;
+    font-size: 180%;
+    @apply font-semibold text-center;
 }
 :deep(h2) {
-    @apply font-semibold text-center text-3xl;
+    font-size: 150%;
+    @apply font-semibold text-center;
 }
 </style>
