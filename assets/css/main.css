@@ -9,3 +9,8 @@
 .songti {
     font-family: Georgia, SimSun, "宋体", serif;;
 }
+
+:root {
+    /* bg-neutral-200 */
+    --background-color: #e5e5e5
+}
