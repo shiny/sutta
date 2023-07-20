@@ -25,7 +25,20 @@ export default defineNuxtConfig({
       }
     },
   },
-  image: {},
+  image: {
+    provider: 'cloudimage',
+    /**
+     * You can register an account on cloudimage.io
+     * 
+     * Here is an example
+     * source: https://hufasi.com/cover/xifangquezhi.jpg
+     * destination: https://cthkthtwca.cloudimg.io/hufasi.com/cover/xifangquezhi.jpg?width=128
+     */
+    cloudimage: {
+      baseURL: "hufasi.com",
+      cdnURL: "https://cthkthtwca.cloudimg.io"
+    }
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
