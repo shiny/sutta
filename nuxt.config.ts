@@ -8,7 +8,8 @@ export default defineNuxtConfig({
   modules: [
     "@bg-dev/nuxt-naiveui",
     '@nuxt/content',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxt/image',
   ],
   content: {
     documentDriven: true
@@ -24,6 +25,7 @@ export default defineNuxtConfig({
       }
     },
   },
+  image: {},
   postcss: {
     plugins: {
       tailwindcss: {},
