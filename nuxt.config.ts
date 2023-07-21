@@ -17,6 +17,7 @@ export default defineNuxtConfig({
   },
   naiveui: {
     iconSize: 18,
+    colorModePreference: 'system',
     themeConfig: {
       shared: {
         common: {
