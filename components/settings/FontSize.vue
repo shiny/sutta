@@ -14,7 +14,7 @@ const props = defineProps<{
     defaultValue: typeof values[number]
 }>()
 const fontSizeOptions: Record<number, string> = {
-  0: 'sm',
+  0: 'base',
   20: 'lg',
   40: 'xl',
   60: '2xl',

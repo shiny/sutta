@@ -22,7 +22,7 @@ const fontSize = ref('lg')
 .app {
   @apply bg-stone-200;
 }
-:deep(.paragraph-sm p){
+:deep(.paragraph-base p){
   @apply py-1;
 }
 :deep(.paragraph-lg p){
