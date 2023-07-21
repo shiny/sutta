@@ -16,6 +16,14 @@
     </div>
 </template>
 <script setup lang="ts">
+const colorMode = useColorMode()
+/** Sync NaiveUI color mode settings */
+const { colorModePreference } = useNaiveColorMode()
+watch(colorMode, () => {
+    if (['light', 'dark', 'system'].includes(colorMode.preference)) {
+        colorModePreference.value = colorMode.preference as 'light' | 'dark' | 'system'
+    }
+})
 
 const isSystemDarkMode = computed(() => {
     if(typeof window === 'undefined') {
