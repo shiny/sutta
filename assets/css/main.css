@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: MinifiedKaiTi;
+    src: url(/fonts/kaiti.ttf);
+}
+
 .kaiti {
-    font-family: Arial, BiauKai, STKaiti, KaiTi, KaiTi_GB2312;
+    font-family: Arial, BiauKai, STKaiti, KaiTi, KaiTi_GB2312, MinifiedKaiTi;
 }
 
 .songti {
