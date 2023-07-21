@@ -24,17 +24,17 @@
         </div>
         <footer class="mt-10 w-full border-t dark:border-zinc-800">
             <section class="max-w-7xl m-auto text-[13px] py-5 text-gray-500">
-                <p class="text-sm kaiti text-zinc-600 dark:text-zinc-200">
+                <div class="text-sm kaiti text-zinc-600 dark:text-zinc-200">
                     <h3>回向偈</h3>
-                    愿以此功德，
+                    <p>愿以此功德，
                     庄严佛净土。
                     上报四重恩，
                     下济三途苦。
                     若有见闻者，
                     悉发菩提心。
                     尽此一报身，
-                    同生极乐国。
-                </p>
+                    同生极乐国。</p>
+                </div>
                 <ul class="mt-3">
                     <li class="kaiti"></li>
                     <li>* 本项目与各地的护法寺均不存在任何关系</li>
