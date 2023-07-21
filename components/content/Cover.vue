@@ -6,10 +6,10 @@
 <style scoped>
 :deep(h1) {
     font-size: 180%;
-    @apply font-semibold text-center;
+    @apply font-semibold;
 }
 :deep(h2) {
-    font-size: 150%;
-    @apply font-semibold text-center;
+    font-size: 160%;
+    @apply font-semibold;
 }
 </style>
