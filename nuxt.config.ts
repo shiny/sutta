@@ -10,19 +10,20 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-icon',
     '@nuxt/image',
+    '@nuxtjs/color-mode'
   ],
   content: {
     documentDriven: true
   },
   naiveui: {
-    colorModePreference: "light",
     iconSize: 18,
+    colorModePreference: 'system',
     themeConfig: {
       shared: {
         common: {
-          primaryColor: '#F25739'
+          primaryColor: '#F25739',
         }
-      }
+      },
     },
   },
   image: {
@@ -44,6 +45,11 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+  colorMode: {
+    preference: 'system',
+    fallback: 'dark',
+    classSuffix: ''
   },
   devtools: { enabled: true }
 })

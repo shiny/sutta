@@ -3,7 +3,7 @@
     <NuxtPage />
   </NaiveConfig>
 </template>
-<script setup>
+<script setup lang="ts">
 useServerHead({
   link: [{
     rel: 'icon',
@@ -11,4 +11,5 @@ useServerHead({
     href: '/icon.png'
   }]
 })
+
 </script>
