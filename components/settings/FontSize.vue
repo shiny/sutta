@@ -1,5 +1,5 @@
 <template>
-    <div class="items-center transition-all flex gap-0.5 h-14 overflow-hidden" :class="{ 'w-64': expended, 'w-14': !expended }">
+    <div class="items-center transition-all flex gap-0.5 h-14 text-gray-500 hover:text-gray-900 hover:dark:text-gray-300 overflow-hidden" :class="{ 'w-64': expended, 'w-14': !expended }">
         <div class="flex-none w-14 text-center" @click="expended = !expended">
             <Icon class="w-8 h-8" name="fluent:text-font-16-regular" />
         </div>
