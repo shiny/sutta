@@ -1,8 +1,13 @@
 <template>
-    <div class="h-14 w-14 p-3.5 text-gray-500 hover:text-gray-900 hover:dark:text-gray-300" @click="toggleColorMode">
-        <Icon class="w-full h-full" name="ph:moon" v-if="modeActually === 'dark'"></Icon>
-        <Icon class="w-full h-full" name="ph:sun" v-else-if="modeActually === 'light'"></Icon>
-    </div>
+    <NPopover trigger="hover" placement="right">
+        <template #trigger>
+            <div class="bg-stone-100 hover:bg-stone-50 dark:bg-stone-800 dark:hover:bg-stone-700 rounded-full shadow h-14 w-14 p-3.5 text-gray-500 hover:text-gray-900 hover:dark:text-gray-300" @click="toggleColorMode">
+                <Icon class="w-full h-full" name="ph:moon" v-if="modeActually === 'dark'"></Icon>
+                <Icon class="w-full h-full" name="ph:sun" v-else-if="modeActually === 'light'"></Icon>
+            </div>
+        </template>
+        切换深/浅色模式
+    </NPopover>
 </template>
 <script setup lang="ts">
 type MODE = 'system' | 'dark' | 'light'

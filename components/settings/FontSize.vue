@@ -1,12 +1,17 @@
 <template>
-    <div class="items-center transition-all flex gap-0.5 h-14 text-gray-500 hover:text-gray-900 hover:dark:text-gray-300 overflow-hidden" :class="{ 'w-64': expended, 'w-14': !expended }">
-        <div class="flex-none w-14 text-center" @click="expended = !expended">
-            <Icon class="w-8 h-8" name="fluent:text-font-16-regular" />
-        </div>
-        <div class="pr-6 grow">
-            <n-slider class="w-full" :default-value="defaultNumber" :tooltip="false" @update-value="onChange" :marks="fontSizeOptions" :step="20" />
-        </div>
-    </div>
+    <NPopover trigger="hover" placement="right">
+        <template #trigger>
+            <div class="bg-stone-100 hover:bg-stone-50 dark:bg-stone-800 dark:hover:bg-stone-700 rounded-full shadow items-center transition-all flex gap-0.5 h-14 text-gray-500 hover:text-gray-900 hover:dark:text-gray-300 overflow-hidden" :class="{ 'w-64': expended, 'w-14': !expended }">
+                <div class="flex-none w-14 text-center" @click="expended = !expended">
+                    <Icon class="w-8 h-8" name="fluent:text-font-16-regular" />
+                </div>
+                <div class="pr-6 grow">
+                    <n-slider class="w-full" :default-value="defaultNumber" :tooltip="false" @update-value="onChange" :marks="fontSizeOptions" :step="20" />
+                </div>
+            </div>
+        </template>
+        调整字体大小
+    </NPopover>
 </template>
 <script setup lang="ts">
 const expended = ref(false)
