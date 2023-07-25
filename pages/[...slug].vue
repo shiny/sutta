@@ -5,9 +5,9 @@
         <ContentDoc class="p-10 leading-relaxed bg-neutral-50 dark:bg-neutral-800 " :class="`text-${fontSize} paragraph-${fontSize}`" />
         <div class="relative mb-3">
           <div class="fixed bottom-3 flex flex-col gap-3">
-            <SettingsColorMode class="bg-stone-100 hover:bg-stone-50 dark:bg-stone-800 dark:hover:bg-stone-700 rounded-full shadow h-14 w-14" />
+            <SettingsPdfDownload v-if="page?.download_link" :link="page.download_link" />
+            <SettingsColorMode class="" />
             <SettingsFontSize
-              class="bg-stone-100 hover:bg-stone-50 dark:bg-stone-800 dark:hover:bg-stone-700 rounded-full shadow"
               :default-value="fontSize"
               @change="(value) => fontSize = value"
             />

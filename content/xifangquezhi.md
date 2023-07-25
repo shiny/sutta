@@ -1,6 +1,7 @@
 ---
 title: '西方确指'
 description: '庐山东林寺印经处 印赠'
+download_link: https://file.hufasi.com/%E8%A5%BF%E6%96%B9%E7%A1%AE%E6%8C%87%EF%BC%88%E4%B8%9C%E6%9E%97%E7%89%88%E6%89%AB%E6%8F%8F%EF%BC%892020.6.16.pdf
 ---
 
 ::cover
