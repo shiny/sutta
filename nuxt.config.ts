@@ -10,7 +10,9 @@ export default defineNuxtConfig({
     '@nuxt/content',
     'nuxt-icon',
     '@nuxt/image',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss',
+    'nuxt-svgo'
   ],
   content: {
     documentDriven: true
@@ -25,6 +27,12 @@ export default defineNuxtConfig({
         }
       },
     },
+  },
+  tailwindcss: {
+    exposeConfig: true
+  },
+  svgo: {
+    autoImportPath: './assets/img/'
   },
   image: {
     provider: 'cloudimage',
